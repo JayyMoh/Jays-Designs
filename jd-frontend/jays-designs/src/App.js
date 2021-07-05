@@ -1,10 +1,12 @@
 import React from 'react'
-import { Router, Link } from 'react-router-dom'
+import Home from './Components/Home' 
+import { Route, Link } from 'react-router-dom'
+
 
 function App() {
   return (
     <div className="App">
-      test
+      <Route exact path='/' component={ Home } />
     </div>
   );
 }
