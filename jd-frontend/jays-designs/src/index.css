@@ -14,10 +14,6 @@ body {
   margin-left: auto;
 }
 
-.logo {
-  font-family: 'Dancing Script', cursive;
-}
-
 .heading-container {
   margin-top: 6em;
 }
@@ -72,13 +68,13 @@ body {
 
 .fab, .fas {
   margin: 0 10px;
-  color: rgb(51, 51, 51);
+  color: rgb(0,255,105);
 }
 
 .fab:hover {
-  color: rgb(0,255,105);
+  color: white;
 } 
 
 .fas:hover {
-  color: rgb(0,255,105);
+  color: white;
 }

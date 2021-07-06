@@ -1,6 +1,5 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import Button from 'react-bootstrap/Button'
 
 function Home() {
     return (
@@ -11,7 +10,7 @@ function Home() {
                         <img
                         className="d-block w-100 carousel-img"
                         src="https://wallpaperaccess.com/full/112181.jpg"
-                        alt="image 1"
+                        alt="wallpaper"
                         />
                         <Carousel.Caption>
                         <h3>Client Wallpaper</h3>
@@ -22,7 +21,7 @@ function Home() {
                         <img
                         className="d-block w-100 carousel-img"
                         src="https://wallpaper.dog/large/20449397.jpg"
-                        alt="image 2"
+                        alt="abstract"
                         />
                         <Carousel.Caption>
                         <h3>Client Wallpaper</h3>
