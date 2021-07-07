@@ -4,7 +4,7 @@ import { Typography, Container, Button, Grid } from '@material-ui/core'
 import { Link } from '@material-ui/core'
 import useStyles from './styles'
 
-const Cart = ({ cart, RemoveCartItem, ClearCart }) => {
+function Cart({ cart, RemoveCartItem, ClearCart }) {
 
     const classes = useStyles()
 
@@ -34,7 +34,7 @@ const Cart = ({ cart, RemoveCartItem, ClearCart }) => {
                     <Button className={ classes.clearButton } size="large" type="button" variant="contained" color="secondary" onClick={ ClearCart }>
                         Clear Cart
                     </Button>
-                    <Button className={ classes.checkoutButton } size="large" type="button" variant="contained" color="primary">
+                    <Button component={Link} to="/checkout" className={ classes.checkoutButton } size="large" type="button" variant="contained" color="primary">
                         Checkout
                     </Button>
                 </div>

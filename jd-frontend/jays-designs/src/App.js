@@ -7,6 +7,7 @@ import Shop from './Components/Shop/Shop'
 import Footer from './Components/Footer/Footer'
 import Navbar from './Components/Navbar/Navbar'
 import Cart from './Components/ShoppingCart/Cart'
+import Checkout from './Components/Checkout/Checkout'
 import { commerce } from './Commerce/commerce'
 import { Route } from 'react-router-dom'
 
@@ -71,6 +72,9 @@ function App() {
           RemoveCartItem={ handleRemoveCartItem }
           ClearCart={ handleClearCart }
         />
+      </Route>
+      <Route exact path='/checkout'>
+        <Checkout />
       </Route>
       <Footer />
     </div>

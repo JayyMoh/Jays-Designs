@@ -1,11 +1,11 @@
 import React from 'react'
-import { AppBar, Toolbar, IconButton, Badge, Typography, MenuItem, Menu } from '@material-ui/core'
+import { AppBar, Toolbar, IconButton, Badge, Typography } from '@material-ui/core'
 import { ShoppingCart } from '@material-ui/icons'
 import { Link } from 'react-router-dom'
 
 import makeStyles from './styles'
 
-const Navbar = ({ totalItems }) => {
+function Navbar({ totalItems }) {
 
     const classes = makeStyles()
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Typography, Card, CardActions, Button, CardContent, CardMedia } from '@material-ui/core'
 import useStyles from './styles'
 
-const Item = ({ item, removeItem }) => {
+function Item({ item, removeItem }) {
 
     const classes = useStyles()
 
