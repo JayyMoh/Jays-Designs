@@ -46,11 +46,13 @@ const Navbar = ({ totalItems }) => {
                     </ul>
                     <div className={ classes.grow } />
                     <div className={ classes.button }>
-                        <IconButton aria-label="Show cart items" color="inherit">
-                            <Badge badgeContent={ totalItems }>
-                                <ShoppingCart />
-                            </Badge>
-                        </IconButton>
+                        <Link className={ classes.Link } to='/cart'>
+                            <IconButton aria-label="Show cart items" color="inherit">
+                                <Badge badgeContent={ totalItems }>
+                                    <ShoppingCart />
+                                </Badge>
+                            </IconButton>
+                        </Link>
                     </div>
                 </Toolbar>
             </AppBar>

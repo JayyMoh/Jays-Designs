@@ -6,6 +6,7 @@ import About from './Components/About/About'
 import Shop from './Components/Shop/Shop'
 import Footer from './Components/Footer/Footer'
 import Navbar from './Components/Navbar/Navbar'
+import Cart from './Components/ShoppingCart/Cart'
 import { commerce } from './Commerce/commerce'
 import { Route } from 'react-router-dom'
 
@@ -52,6 +53,11 @@ function App() {
         <Shop
           products={ products }
           AddToCart={ handleAddToCart }
+        />
+      </Route>
+      <Route exact path='/cart'>
+        <Cart
+          cart={ cart }
         />
       </Route>
       <Footer />
