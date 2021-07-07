@@ -13,9 +13,8 @@ const Navbar = ({ totalItems }) => {
         <div>
             <AppBar position="fixed" className={ classes.appBar } color="inherit">
                 <Toolbar>
-                    <Typography variant="h6" className={ classes.title } color="inherit">
-                        <img src="https://cdn.discordapp.com/attachments/822281280615219211/862024271659925514/jd.png" alt="Jays Designs" height="25px" className={ classes.image } />
-                        Jays Designs
+                    <Typography component={Link} to="/" className={ classes.title } color="inherit">
+                        <img src="https://cdn.discordapp.com/attachments/822281280615219211/862024271659925514/jd.png" alt="Jays Designs" height="30px" className={ classes.image } />
                     </Typography>
                     <ul className='nav-ul'>
                         <li className='nav-li'>

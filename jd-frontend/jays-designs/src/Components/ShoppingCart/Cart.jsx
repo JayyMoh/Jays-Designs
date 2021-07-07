@@ -1,15 +1,16 @@
 import React from 'react'
 import Item from './CartItem/Item'
 import { Typography, Container, Button, Grid } from '@material-ui/core'
+import { Link } from '@material-ui/core'
 import useStyles from './styles'
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, RemoveCartItem, ClearCart }) => {
 
     const classes = useStyles()
 
     const EmptyCart = () => (
         <Typography varient="subtitle1">
-            Looks like there are no items in the cart yet.
+            Oops. Looks like there are no items in the cart yet.
         </Typography>
     )
 
@@ -20,6 +21,7 @@ const Cart = ({ cart }) => {
                     <Grid type="item" key={ item.id } xs={12} sm={6}>
                         <Item
                             item={ item }
+                            removeItem={ RemoveCartItem }
                         />
                     </Grid>
                 ))}
@@ -29,7 +31,7 @@ const Cart = ({ cart }) => {
                     Subtotal: { cart.subtotal.formatted_with_symbol }
                 </Typography>
                 <div>
-                    <Button className={ classes.clearButton } size="large" type="button" variant="contained" color="secondary">
+                    <Button className={ classes.clearButton } size="large" type="button" variant="contained" color="secondary" onClick={ ClearCart }>
                         Clear Cart
                     </Button>
                     <Button className={ classes.checkoutButton } size="large" type="button" variant="contained" color="primary">
