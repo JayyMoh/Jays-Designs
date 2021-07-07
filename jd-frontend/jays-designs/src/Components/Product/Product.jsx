@@ -10,19 +10,17 @@ const Product = ({ product }) => {
     return (
         <div className="page-container">
             <Card className={ classes.root }>
-                <CardMedia className={ classes.media } image={ product.image } title={ product.name } />
+                <CardMedia className={ classes.media } image={ product.media.source } title={ product.name } />
                 <CardContent>
                     <div className={ classes.cardContent }>
                         <Typography variant="h4" gutterBottom>
                             { product.name }
                         </Typography>
                         <Typography variant="h4">
-                            { product.price }
+                            { product.price.formatted_with_symbol }
                         </Typography>
                     </div>
-                    <Typography paragraph={ true }>
-                        { product.description }
-                    </Typography>
+                    <Typography dangerouslySetInnerHTML={{ __html: product.description }} />
                     <CardActions disableSpacing className={ classes.cardActions }>
                         <IconButton aria-label="Add to Cart">
                             <AddShoppingCart />
