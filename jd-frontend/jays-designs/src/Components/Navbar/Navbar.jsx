@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 import makeStyles from './styles'
 
-const Navbar = () => {
+const Navbar = ({ totalItems }) => {
 
     const classes = makeStyles()
 
@@ -47,7 +47,7 @@ const Navbar = () => {
                     <div className={ classes.grow } />
                     <div className={ classes.button }>
                         <IconButton aria-label="Show cart items" color="inherit">
-                            <Badge badgeContent={ 0 }>
+                            <Badge badgeContent={ totalItems }>
                                 <ShoppingCart />
                             </Badge>
                         </IconButton>

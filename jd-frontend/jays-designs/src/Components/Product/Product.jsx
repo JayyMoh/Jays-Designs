@@ -3,7 +3,7 @@ import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } fro
 import { AddShoppingCart } from '@material-ui/icons'
 import useStyles from './styles'
 
-const Product = ({ product }) => {
+const Product = ({ product, AddToCart }) => {
 
     const classes = useStyles()
 
@@ -16,13 +16,17 @@ const Product = ({ product }) => {
                         <Typography variant="h4" gutterBottom>
                             { product.name }
                         </Typography>
-                        <Typography variant="h4">
+                        <Typography variant="h5">
                             { product.price.formatted_with_symbol }
                         </Typography>
                     </div>
                     <Typography dangerouslySetInnerHTML={{ __html: product.description }} />
                     <CardActions disableSpacing className={ classes.cardActions }>
-                        <IconButton aria-label="Add to Cart" color="inherit">
+                        <IconButton
+                            aria-label="Add to Cart"
+                            color="inherit"
+                            onClick={() => AddToCart(product.id, 1) } 
+                        >
                             <AddShoppingCart />
                         </IconButton>
                     </CardActions>
