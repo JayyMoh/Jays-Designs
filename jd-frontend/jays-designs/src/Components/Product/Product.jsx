@@ -22,7 +22,7 @@ const Product = ({ product }) => {
                     </div>
                     <Typography dangerouslySetInnerHTML={{ __html: product.description }} />
                     <CardActions disableSpacing className={ classes.cardActions }>
-                        <IconButton aria-label="Add to Cart">
+                        <IconButton aria-label="Add to Cart" color="inherit">
                             <AddShoppingCart />
                         </IconButton>
                     </CardActions>

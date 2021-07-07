@@ -8,9 +8,10 @@ export default makeStyles(() => ({
         borderRadius: '10px',
         boxShadow: '.5px 1px 1px 1px rgb(51,51,51)',
         color: 'white',
+        minHeight: '680px',
+        marginBottom: '2em',
     },
     media: {
-        height: 0,
         paddingTop: '65%',
     },
     cardActions: {
