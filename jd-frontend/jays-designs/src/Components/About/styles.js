@@ -6,10 +6,9 @@ export default makeStyles(() => ({
         top: '0',
     },
     aboutContent: {
-        marginTop: '6em',
         padding: '20px',
-        width: '60%',
-        height: '80vh',
+        width: '80%',
+        height: '100vh',
         marginRight: 'auto',
         marginLeft: 'auto',
         border: 'solid 3px black',
@@ -18,15 +17,15 @@ export default makeStyles(() => ({
         boxShadow: '.5px 1px 1px 1px rgb(20, 20, 20)'
     },
     img: {
-        marginTop: '1.5em',
+        marginTop: '6em',
         border: 'solid 1px black',
         borderRadius: '5px',
         float: 'left',
         marginRight: '15px',
     },
     text: {
-        marginTop: '4em',
+        marginTop: '6em',
         color: 'white',
-        lineHeight: '230%'
+        lineHeight: '300%'
     }
 }));

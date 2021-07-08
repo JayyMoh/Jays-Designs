@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Container, Button, Typography, Grid, TextField } from '@material-ui/core'
 import useStyles from './styles'
 
-
 function Checkout() {
+    
     const classes = useStyles()
 
     return (
