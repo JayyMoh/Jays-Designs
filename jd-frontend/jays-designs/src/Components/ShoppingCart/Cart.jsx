@@ -1,7 +1,7 @@
 import React from 'react'
 import Item from './CartItem/Item'
 import { Typography, Container, Button, Grid } from '@material-ui/core'
-import { Link } from '@material-ui/core'
+import { Link } from 'react-router-dom'
 import useStyles from './styles'
 
 function Cart({ cart, RemoveCartItem, ClearCart }) {
@@ -9,7 +9,7 @@ function Cart({ cart, RemoveCartItem, ClearCart }) {
     const classes = useStyles()
 
     const EmptyCart = () => (
-        <Typography varient="subtitle1">
+        <Typography varient="subtitle1" align="center">
             Oops. Looks like there are no items in the cart yet.
         </Typography>
     )
@@ -18,8 +18,8 @@ function Cart({ cart, RemoveCartItem, ClearCart }) {
         <React.Fragment>
             <Grid container spacing={2}>
                 { cart.line_items.map((item) => (
-                    <Grid type="item" key={ item.id } xs={12} sm={6}>
-                        <Item
+                    <Grid xs={12} sm={6} type="item" key={ item.id }>
+                        <Item 
                             item={ item }
                             removeItem={ RemoveCartItem }
                         />

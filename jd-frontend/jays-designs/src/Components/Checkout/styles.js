@@ -21,6 +21,34 @@ export default makeStyles(() => ({
         backgroundColor: 'white',
     },
     textField: {
-        margin: '0 10px',
-    }
+        margin: '5px 0',
+        width: '100%',
+        border: '1px solid gray',
+        borderRadius: '5px',
+    },
+    button: {
+        marginTop: '2em',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        backgroundColor: 'black',
+        color: 'white',
+        width: '10%',
+        marginBottom: '2em',
+    },
+    sub2: {
+        color: 'black',
+        marginLeft: '10px',
+        marginTop: '10px',
+    },
+    paymentFormBtn: {
+        display: 'flex',
+        justifyContent: 'space-between',
+    },
+    cardElement: {
+        border: '1px solid gray',
+        borderRadius: '5px',
+        padding: '10px',
+        height: '45px',
+        marginBottom: '10px',
+    },
 }));

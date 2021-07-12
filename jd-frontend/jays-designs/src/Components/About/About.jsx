@@ -9,7 +9,7 @@ function About() {
     return (
         <div>
             <div className="page-container">
-                <Container className={ classes.root } maxWidth="xlg">
+                <Container className={ classes.root } maxWidth="xl">
                     <div className={ classes.aboutContent }>
                         <img className={ classes.img } src='https://media.discordapp.net/attachments/822281280615219211/862485614485438474/jon.jpg?width=380&height=676' alt="Jonathan" />
                         <section className={ classes.text }>
