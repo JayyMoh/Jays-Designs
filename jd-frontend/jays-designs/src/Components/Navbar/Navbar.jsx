@@ -27,22 +27,22 @@ function Navbar({ totalItems }) {
                                 Home
                             </Link>
                         </li>
-                        <li className='nav-li'>
+                        <li className={ classes.navLi }>
                             <Link className={ classes.Link } to='/projects'>
                                 My Work
                             </Link>
                         </li>
-                        <li className='nav-li'>
+                        <li className={ classes.navLi }>
                             <Link className={ classes.Link } to='/about'>
                                 About Me
                             </Link>
                         </li>
-                        <li className='nav-li'>
+                        <li className={ classes.navLi }>
                             <Link className={ classes.Link } to='/shop'>
                                 Shop
                             </Link>
                         </li>
-                        <li className='nav-li'>
+                        <li className={ classes.navLi }>
                             <Link className={ classes.Link } to='/contact'>
                                 Contact
                             </Link>

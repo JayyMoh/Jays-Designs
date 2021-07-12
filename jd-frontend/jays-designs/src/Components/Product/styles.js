@@ -10,17 +10,27 @@ export default makeStyles(() => ({
         color: 'white',
         minHeight: '680px',
         marginBottom: '2em',
+        padding: '5px',
     },
     media: {
         paddingTop: '65%',
     },
     cardActions: {
         display: 'flex',
-        justifyContent: 'flex-end',
+        justifyContent: 'center',
+        borderRadius: '10px',
+        backgroundColor: 'rgb(0,255,105)',
+        marginRight: 'auto',
+        marginLeft: 'auto',
     },
     cardContent: {
         display: 'flex',
         justifyContent: 'space-between',
         color: 'white',
+        borderBottom: '1px solid white',
+        marginBottom: '15px',
+    },
+    Text: {
+        marginTop: '15px',
     },
 }))

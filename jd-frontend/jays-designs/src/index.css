@@ -30,21 +30,6 @@ body {
   background-color: black;
 }
 
-.nav-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-
-.nav-li {
-  float: left;
-  margin-right: 10px;
-  border: 2px solid black;
-  padding: 5px;
-  border-radius: 5px;
-  color: rgb(0,255,105);
-  text-decoration: none;
-}
 
 /* carousel  */
 .carousel-container {

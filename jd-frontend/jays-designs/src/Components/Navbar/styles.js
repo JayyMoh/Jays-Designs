@@ -32,6 +32,9 @@ export default makeStyles((theme) => ({
         }
     },
     navUl: {
+        [theme.breakpoints.down('xs')]: {
+          display: 'none',
+        },
         listStyleType: 'none',
         display: 'flex',
         justifyContent: 'center',      

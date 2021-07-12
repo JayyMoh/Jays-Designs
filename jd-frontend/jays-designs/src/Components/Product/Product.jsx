@@ -10,7 +10,7 @@ function Product({ product, AddToCart }) {
     return (
         <div className="page-container">
             <Card className={ classes.root }>
-                <CardMedia className={ classes.media } image={ product.media.source } title={ product.name } />
+
                 <CardContent>
                     <div className={ classes.cardContent }>
                         <Typography variant="h4" gutterBottom>
@@ -20,14 +20,16 @@ function Product({ product, AddToCart }) {
                             { product.price.formatted_with_symbol }
                         </Typography>
                     </div>
-                    <Typography dangerouslySetInnerHTML={{ __html: product.description }} />
+                    <CardMedia className={ classes.media } image={ product.media.source } title={ product.name } />
+
+                    <Typography className={ classes.Text } dangerouslySetInnerHTML={{ __html: product.description }} />
                     <CardActions disableSpacing className={ classes.cardActions }>
                         <IconButton
                             aria-label="Add to Cart"
                             color="inherit"
-                            onClick={() => AddToCart(product.id, 1) } 
+                            onClick={() => AddToCart(product.id, 1) }
                         >
-                            <AddShoppingCart />
+                            <AddShoppingCart /> Add to Cart
                         </IconButton>
                     </CardActions>
                 </CardContent>
