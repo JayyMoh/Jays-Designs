@@ -40,3 +40,4 @@ Once the checkout is ironed out I would love to create a user login so that disc
 <br />
 
 <h2>Link to the Deployed Site: https://jays-designs.web.app/</h2>
+<h2>Link to the Chec storefront: https://spaces.chec.io/29982</h2>
