@@ -8,9 +8,11 @@ export default makeStyles(() => ({
         borderRadius: '10px',
         boxShadow: '.5px 1px 1px 1px rgb(51,51,51)',
         color: 'white',
-        minHeight: '680px',
+        minHeight: '750px',
         marginBottom: '2em',
         padding: '5px',
+        display: 'flex',
+        flexDirection: 'column',
     },
     media: {
         paddingTop: '65%',
@@ -32,5 +34,8 @@ export default makeStyles(() => ({
     },
     Text: {
         marginTop: '15px',
+    },
+    Button: {
+        marginTop: '3em',
     },
 }))

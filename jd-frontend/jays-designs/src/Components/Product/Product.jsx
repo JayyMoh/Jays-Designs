@@ -23,15 +23,17 @@ function Product({ product, AddToCart }) {
                     <CardMedia className={ classes.media } image={ product.media.source } title={ product.name } />
 
                     <Typography className={ classes.Text } dangerouslySetInnerHTML={{ __html: product.description }} />
-                    <CardActions disableSpacing className={ classes.cardActions }>
-                        <IconButton
-                            aria-label="Add to Cart"
-                            color="inherit"
-                            onClick={() => AddToCart(product.id, 1) }
-                        >
-                            <AddShoppingCart /> Add to Cart
-                        </IconButton>
-                    </CardActions>
+                    <div className={ classes.Button }>
+                        <CardActions disableSpacing className={ classes.cardActions }>
+                            <IconButton
+                                aria-label="Add to Cart"
+                                color="inherit"
+                                onClick={() => AddToCart(product.id, 1) }
+                            >
+                                <AddShoppingCart /> Add to Cart
+                            </IconButton>
+                        </CardActions>
+                    </div>
                 </CardContent>
             </Card>
         </div>
