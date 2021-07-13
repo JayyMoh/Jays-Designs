@@ -25,17 +25,20 @@ export default makeStyles(() => ({
         marginRight: 'auto',
         marginLeft: 'auto',
     },
-    cardContent: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        color: 'white',
+    cardTitle: {
         borderBottom: '1px solid white',
         marginBottom: '15px',
+    },
+    cardContent: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        color: 'white',
     },
     Text: {
         marginTop: '15px',
     },
     Button: {
-        marginTop: '3em',
+        marginTop: '2em'
     },
 }))

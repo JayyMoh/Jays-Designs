@@ -13,26 +13,27 @@ function Product({ product, AddToCart }) {
 
                 <CardContent>
                     <div className={ classes.cardContent }>
-                        <Typography variant="h4" gutterBottom>
-                            { product.name }
-                        </Typography>
-                        <Typography variant="h5">
-                            { product.price.formatted_with_symbol }
-                        </Typography>
-                    </div>
-                    <CardMedia className={ classes.media } image={ product.media.source } title={ product.name } />
-
-                    <Typography className={ classes.Text } dangerouslySetInnerHTML={{ __html: product.description }} />
-                    <div className={ classes.Button }>
-                        <CardActions disableSpacing className={ classes.cardActions }>
-                            <IconButton
-                                aria-label="Add to Cart"
-                                color="inherit"
-                                onClick={() => AddToCart(product.id, 1) }
-                            >
-                                <AddShoppingCart /> Add to Cart
-                            </IconButton>
-                        </CardActions>
+                        <div className={ classes.cardTitle }>
+                            <Typography variant="h4" align="center">
+                                { product.name }
+                            </Typography>
+                            <Typography variant="h5" align="center">
+                                { product.price.formatted_with_symbol }
+                            </Typography>
+                        </div> 
+                        <CardMedia className={ classes.media } image={ product.media.source } title={ product.name } />
+                        <Typography className={ classes.Text } dangerouslySetInnerHTML={{ __html: product.description }} />
+                        <div className={ classes.Button }>
+                            <CardActions disableSpacing className={ classes.cardActions }>
+                                <IconButton
+                                    aria-label="Add to Cart"
+                                    color="inherit"
+                                    onClick={() => AddToCart(product.id, 1) }
+                                >
+                                    <AddShoppingCart /> Add to Cart
+                                </IconButton>
+                            </CardActions>
+                        </div>
                     </div>
                 </CardContent>
             </Card>
