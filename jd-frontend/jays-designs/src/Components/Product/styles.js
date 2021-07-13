@@ -16,6 +16,7 @@ export default makeStyles(() => ({
     },
     media: {
         paddingTop: '65%',
+        border: 'solid 1px rgb(0,255,105)'
     },
     cardActions: {
         display: 'flex',
